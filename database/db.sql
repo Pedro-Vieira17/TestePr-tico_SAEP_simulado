@@ -6,7 +6,7 @@ CREATE TABLE FUNCIONÁRIO (
   nome varchar(100) NOT NULL,
   email varchar(100) NOT NULL,
   PRIMARY KEY (id)
-) 
+) ;
 
 CREATE TABLE PEDIDO_REPOSICAO (
     ID int(11) NOT NULL AUTO_INCREMENT,
@@ -19,4 +19,5 @@ CREATE TABLE PEDIDO_REPOSICAO (
     Status enum('solicitado', 'em separação ou recebido', 'sendo solicitado o valor padrão') NOT NULL,
     PRIMARY KEY (ID),
     FOREIGN KEY (ID_FUNCIONARIO) REFERENCES FUNCIONÁRIO(id)
-) 
+
+) ;
